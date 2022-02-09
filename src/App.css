@@ -1,0 +1,126 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+header {
+  display: flex;
+}
+.navbar {
+  display: flex;
+  flex: 1;
+  height: 5.2em;
+  background: rgb(62, 75, 99);
+  justify-content: space-between;
+  align-items: center;
+}
+
+.logo {
+  margin-right: -1em;
+  margin-top: -1em;
+  width: 10em;
+}
+
+.btn {
+  /* display: inline-block;
+  font-weight: 400;
+  line-height: 1.5; */
+  color: #212529;
+  text-align: center;
+  text-decoration: none;
+  vertical-align: middle;
+  cursor: pointer;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  user-select: none;
+  background-color: transparent;
+  border: 0px solid transparent;
+  padding: 0.375rem 0.75rem;
+  font-size: 1rem;
+  border-radius: 0.25rem;
+}
+
+.switch {
+  width: 5.5em;
+  height: 5.2em;
+  overflow: hidden;
+  background-color: rgb(62, 75, 99);
+  /* clip-path: polygon(0 0, 100% 0, 100% 35.7%, 0 35.7%); */
+}
+
+.switch-opened {
+  width: 12em;
+  height: unset;
+  overflow: hidden;
+  background-color: rgb(62, 75, 99);
+  /* clip-path: polygon(40% 0, 100% 0, 100% 50%, 100% 100%, 0 100%, 0% 35.7%, 40% 35.7%); */
+}
+
+.navbar-switch {
+  display: flex;
+  flex-direction: row-reverse;
+  justify-content: space-around;
+  align-items: flex-end;
+  overflow: hidden;
+  max-height: 10.5em;
+}
+
+.navbar-switch-inner {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+}
+
+.pointer {
+  display: none;
+  position: absolute;
+  width: 2em;
+  height: 2em;
+}
+
+.navbar-nav {
+  display: flex;
+  margin-right: auto;
+  list-style: none;
+}
+
+.navbar-nav > * {
+  margin: 0 1em;
+}
+
+.link {
+  text-decoration: none;
+  color: white;
+}
+
+.link:hover {
+  color: black;
+}
+
+.-Dev {
+  text-align: center;
+  transform: translate(10px, 0);
+  border-radius: 5px;
+  background-color: #212529;
+  padding: 5px;
+}
+
+.-Art {
+  text-align: center;
+  transform: translate(10px, 0);
+  border-radius: 5px;
+  background-color: #212529;
+  padding: 5px;
+}
+
+.-Art:hover ~ .pointer {
+  display: unset;
+  bottom: 1.7em;
+  left: 3em;
+}
+
+.-Dev:hover ~ .pointer {
+  display: unset;
+  bottom: -0.4em;
+  left: 3em;
+}
