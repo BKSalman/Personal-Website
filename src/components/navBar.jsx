@@ -1,5 +1,4 @@
-import React from 'react';
-import SwitchMenu from './switchMenu';
+import SwitchMenu from './SwitchMenu';
 
 
 const NavBar =  () => {
@@ -10,17 +9,17 @@ const NavBar =  () => {
                 <ul className='navbar-nav'>
                 <li>
                     <a className='link' href="/">
-                    <p>something</p>
+                    <p>My projects</p>
                     </a> 
                 </li>
                 <li>
                     <a className='link' href="/">
-                    <p>something else</p>
+                    <p>My skills</p>
                     </a> 
                 </li>
                 <li>
                     <a className='link' href="/">
-                    <p>contact</p>
+                    <p>Contact</p>
                     </a>
                 </li>
                 </ul>
